@@ -5,11 +5,15 @@ number = random.randint(-10000, 10000)
 lastD = str(number)[-1]
 if number < 0:
     lastD = -int(lastD)
-if int(lastD) > 5:
+lastD = int(lastD)
+if lastD > 5:
+    lastD = int(lastD)
     print(f"Last digit of {number:d} is {lastD:d} and is greater than 5")
-elif int(lastD) == 0:
+elif lastD == 0:
+    lastD = int(lastD)
     print(f"Last digit of {number:d} is {lastD:d} and is {lastD:d}")
-elif int(lastD) < 6:
-    if int(lastD) != 0:
-        lastD = int(lastD)
+elif lastD < 6:
+    lastD = int(lastD)
+    if lastD != 0:
+        lastD = lastD
         print(f"Last digit of {number:d} is {lastD:d} and is less than 6 and not 0")
