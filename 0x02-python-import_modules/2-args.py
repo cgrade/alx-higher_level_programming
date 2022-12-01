@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
+    """Prints out the arguments entered into the command line and list them out"""
     import sys
     arg = sys.argv
     num_of_arg = len(arg) - 1
