@@ -1,6 +1,11 @@
-#!/usr/bin/env python3
-no_c = __import__('5-no_c').no_c
+#!/usr/bin/python3
+add_tuple = __import__('7-add_tuple').add_tuple
 
-print(no_c("Best School"))
-print(no_c("Chicago"))
-print(no_c("C is fun!"))
+tuple_a = (1, 89)
+tuple_b = (88, 11)
+new_tuple = add_tuple(tuple_a, tuple_b)
+print(new_tuple)
+
+print(add_tuple(tuple_a, (1, )))
+print(add_tuple(tuple_a, ()))
+
