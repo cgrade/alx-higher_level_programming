@@ -8,6 +8,5 @@ def print_sorted_dictionary(a_dictionary):
     sortd_keylist = sorted(key_list)
     for item in sortd_keylist:
         new_dict[item] = a_dictionary[item]
-    #print(new_dict)
     for keys, values in new_dict.items():
         print("{}: {}".format(keys, values))
