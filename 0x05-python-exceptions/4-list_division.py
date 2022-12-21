@@ -1,11 +1,9 @@
 #!/usr/bin/python3
 def list_division(my_list_1, my_list_2, list_length):
     nlist = []
-    i = 0
-    for n in my_list_1:
+    for n in range(list_length):
         try:
-            a = n / my_list_2[i]
-            nlist.append(a)
+            nlist.append(my_list_1[n] / my_list_2[n])
         except ZeroDivisionError:
             print("division by 0")
             nlist.append(0)
@@ -17,5 +15,4 @@ def list_division(my_list_1, my_list_2, list_length):
             nlist.append(0)
         finally:
             pass
-        i += 1
     return(nlist)
