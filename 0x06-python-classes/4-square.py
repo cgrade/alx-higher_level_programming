@@ -12,12 +12,7 @@ class Square:
     """
     def __init__(self, size=0):
         """Constructor of the Square Classe"""
-        if not isinstance(size, int):
-            raise TypeError('size must be an integer')
-
-        elif size < 0:
-            raise ValueError('size must be >= 0')
-        self.__size = size
+        self.size = size
 
     def area(self):
         """ compute the Area of the size"""
@@ -28,7 +23,10 @@ class Square:
         """getter"""
         return(self.__size)
 
-    @property
+    @size.setter
     def size(self, value):
-        """setter"""
-        self.__size == value
+        if not isinstance(value, int):
+            raise TypeError("size must be an integer")
+        elif value < 0:
+            raise ValueError("size must be >= 0")
+        self.__size = value
