@@ -20,11 +20,11 @@ class Square:
 
     def my_print(self):
         """Print to stdout"""
+        for i in range(0, self.size):
+            [print("#", end="") for j in range(self.size)]
+            print("")
         if self.size == 0:
-            return()
-        else:
-            sh = "#" * size
-            return(sh ** sh)
+            print("")
 
     @property
     def size(self):
