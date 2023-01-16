@@ -1,15 +1,9 @@
 #!/usr/bin/python3
-
-"""
-This moddule contains a class definition that inherits
-the list object, and has a sorted method
-and all the elements must be and int.
-"""
+"""This module inherits from the list class"""
 
 
-class Mylist(list):
-    """A class that Inherit from list"""
-
+class MyList(list):
+    """A class that inherits from list"""
     def print_sorted(self):
-        """ A method that sort the elements of the list"""
+        """prints a sorted list"""
         print(sorted(self))
