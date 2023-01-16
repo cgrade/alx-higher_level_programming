@@ -6,9 +6,10 @@ def lookup(object)
 and returns a list of the attributes of the object.
 """
 
+
 def lookup(obj):
     """ A function that returns a list of attributes
-    of an object 
+    of an object
     @param: obj --> Object to lookup it's attributes
     Returns: List
     """
