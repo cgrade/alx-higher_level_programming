@@ -1,2 +1,2 @@
--- updates a value in a table
-UPDATE second_table SET score = 2 WHERE name = 'Bob';
+-- updates the score of Bob to 10 in second_table
+UPDATE second_table SET score=10 WHERE name='Bob';
