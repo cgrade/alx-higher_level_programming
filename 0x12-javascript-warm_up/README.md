@@ -1,1 +1,3 @@
-# This is a readme for JavaScript Tasks
+# Solution to tasks on JavaScript - Warm up
+
+by Abraham Elijah
