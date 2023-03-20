@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-A script that contains 
-state class definiation and 
+A script that contains
+state class definiation and
 Base Class instantiation
 """
 
