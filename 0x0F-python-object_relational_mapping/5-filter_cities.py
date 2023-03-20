@@ -22,6 +22,4 @@ if __name__ == "__main__":
             WHERE states.name LIKE BINARY %(state_name)s
             ORDER BY cities.id""", {'state_name': argv[4]})
     row_fetched = db_cursor.fetchall()
-    for row in row_fetched:
-        print(row[1], end=', ')
-    print()
+    print(', '.join([row[1] for row in row_fetched]))
