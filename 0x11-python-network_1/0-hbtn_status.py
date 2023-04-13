@@ -13,7 +13,7 @@ if __name__ == "__main__":
         # Read the response body as bytes
         response_bytes = response.read()
 
-        print("Body response:$")
-        print("\t- type: {}$\n\t- content: {}$\n\t- utf8 content: {}$"
+        print("Body response:")
+        print("\t- type: {}\n\t- content: {}\n\t- utf8 content: {}"
               .format(type(response_bytes), response_bytes,
                       response_bytes.decode('utf-8')))
