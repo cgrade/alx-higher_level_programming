@@ -5,11 +5,8 @@
 import urllib.request
 
 if __name__ == "__main__":
-    # URL to fetch
-    url = "https://alx-intranet.hbtn.io/status"
-
     # Fetch the URL and store the response
-    with urllib.request.urlopen(url) as response:
+    with urllib.request.urlopen("https://alx-intranet.hbtn.io/status") as response:
         # Read the response body as bytes
         response_bytes = response.read()
 
