@@ -5,11 +5,13 @@
 import urllib.request
 
 if __name__ == "__main__":
+    # URL to fetch
+    url = urllib.request.Request("https://alx-intranet.hbtn.io/status")
 
     # Fetch the URL and store the response
-    with urllib.request.urlopen("https://alx-intranet.hbtn.io/status") as r:
+    with urllib.request.urlopen(url) as response:
         # Read the response body as bytes
-        response_bytes = r.read()
+        response_bytes = response.read()
 
         print("Body response:$")
         print("\t- type: {}$\n\t- content: {}$\n\t- utf8 content: {}$"
